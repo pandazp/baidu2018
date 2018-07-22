@@ -123,10 +123,10 @@ body {
 .serverCapacity {
 	position: fixed;
 	bottom: 30px;
-	border-bottom: ;
-	margin: 0 30px;
+	padding: 30px;
 	font: 14px "ProximaNova";
 	color: #fff;
+	background: #222c3c;
 }
 .serverCapacity p {
 	position: relative;
@@ -161,7 +161,9 @@ body {
 	position: fixed;
 	top: 0;
 	right: 25px;
-	height: 80px;
+	height: 78px;
+	background: rgba(255,255,255);
+	z-index: 9999;
 }
 .head-wrapper {
 	display: inline-block;
@@ -183,10 +185,14 @@ body {
 .head>p>a {
 	vertical-align: middle;
 }
+.chat {
+	height: 100%;
+}
 .chat-left {
 	float: left;
 	border-right: 1px solid #ccc;
 	width: 400px;
+	height: calc(100% - 80px);
 }
 .chat-left div.chat-left-part1 {
 	height: 70px;
