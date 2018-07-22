@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style_1.css">
+	<!-- <link rel="stylesheet" href="style_2.css"> -->
+	<!-- <link rel="stylesheet" href="style_3.css"> -->
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+/*两栏*/
+/*float
+.left {
+	float: left;
+	width: 30%;
+	background: #f00;
+}
+.right {
+	//float: left;
+
+	//width: 70%;
+	background: #0f0;
+	overflow: auto;
+}
+*/
+/*position
+.left {
+	position: absolute;
+	width: 30%;
+	background: #f00;
+}
+.right {
+	width: 70%;
+	position: absolute;
+	left: 30%;
+	background: #0f0;
+}
+*/
+/*flex
+.wrapper {
+	display: flex;	
+}	
+
+.left {
+	background: #f00;
+	width: 30%;
+}
+.right {
+	
+	width: 70%;
+	background: #0f0;
+}
+*/
+/*两栏布局，左侧固定宽度，右侧根据浏览器宽度进行自适应变化*/
+/*float
+.wrapper {
+	overflow: auto;
+}
+.left {
+	float: left;
+	width: 200px;
+	background: #f00;
+}
+.right {
+	background: #0f0;
+	overflow: auto;
+}
+*/
+/*position
+.left {
+	position: absolute;
+	width: 200px;
+	background: #f00;
+}
+.right {
+	background: #0f0;
+	margin-left: 200px;
+}
+*/
+/*flex
+.wrapper {
+	display: flex;
+}
+.left {
+	width: 200px;
+	background: #f00;
+}
+.right {
+	background: #0f0;
+	flex-grow: 1;
+}
+
+*/
+
+
+/*两栏布局，右侧固定宽度，左侧根据浏览器宽度进行自适应变化*/
+/*float
+.wrapper {
+	overflow: auto;
+}
+.left {	
+	float: right;
+	background: #f00;
+	width: 200px;
+}
+.right {
+	margin-right: 200px;
+	background: #0f0;
+	
+}
+
+*/
+
+/*position
+.right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 200px;
+	background: #f00;
+}
+.left {
+	background: #0f0;
+	margin-right: 200px;
+}
+*/
+
+/*flex
+.wrapper {
+	display: flex;
+}
+.left {
+	flex-grow: 1;
+	background: #f00;
+}
+.right {
+	background: #0f0;
+	width: 200px;
+}
+*/
+
+/*三栏布局，左侧固定宽度，右侧固定宽度，中间部分宽度随浏览器宽度变化而自适应变化*/
+
+/*圣杯布局*/
+/*.wrapper {
+	padding: 0 200px;
+	overflow: hidden;
+}
+.main {
+	float: left;
+	width: 100%;
+	background: #00f;
+}
+.left {
+	float: left;
+	width: 200px;
+	margin-left: -100%;
+	background: #f00;
+	position: relative;
+	left: -200px;
+}
+.right {
+	float: left;
+	width: 200px;
+	background: #0f0;
+	margin-left: -200px;
+	position: relative;
+	left: 200px;
+}*/
+/*双飞翼布局*/
+/*.wrapper>div {
+	float: left;
+}
+.container {
+	width: 100%;
+}
+.main {
+	margin: 0 200px;
+	background: #0f0;
+}
+.left {
+	width: 200px;
+	margin-left: -100%;
+	background: #f00;
+}
+.right {
+	margin-left: -200px;
+	background: #00f;
+	width: 200px;
+}
+*/
+/*fles*/
+
+/*.wrapper {
+	display: flex;
+}
+.main {
+	order: 1;
+	flex-grow: 1;
+	background: #f00;
+}
+.left {
+	order: 0;
+	width: 200px;
+	background: #00f;
+}
+
+.right {
+	order: 2;
+	width: 200px;
+	background: #0f0;
+}
+*/
+
+
+/*三栏布局，左侧固定宽度，中间固定宽度，右侧根据浏览器宽度变化而自适应变化*/
+
+/*float*/
+/*.main {
+	float: left;
+	width: 200px;
+	background: #f00;
+}
+
+.left {
+	float: left;
+	width: 200px;
+	background: #00f;
+}
+.right {
+	margin-left: 400px;
+	background: #0f0;
+}*/
+/*position*/
+/*.main {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	background: #f00;
+}
+
+.left {
+	position: absolute;
+	top: 0;
+	left: 200px;
+	width: 200px;
+	background: #00f;
+}
+.right {
+	margin-left: 400px;
+	background: #0f0;
+}*/
+
+
+/*fles*/
+
+.wrapper {
+	display: flex;
+}
+.main {
+	order: 1;
+	width: 200px;
+	background: #f00;
+}
+.left {
+	order: 0;
+	width: 200px;
+	background: #00f;
+}
+
+.right {
+	order: 2;
+	
+	background: #0f0;
+	flex-grow: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</style>
+
+
+
+</head>
+<body>
+		
+	<div class="wrapper">
+	    <div class="main">main</div>
+		<div class="left">left<br><br><br><br><br><br><br><br><br><br></div>
+		<div class="right">right</div>
+	</div>
+
+</body>
+
+
+</html>

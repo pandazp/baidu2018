@@ -1,0 +1,486 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	min-width: 1280px;
+}
+/*垂直水平居中*/
+.center {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+/*header*/
+header {
+	//width: 1600px;
+	height: 990px;
+	background: url(images/header-bg.png) no-repeat;
+	background-size:  100% 100%;
+	overflow: auto;
+}
+header h1 {
+	margin-top: 200px;
+	font: 62px/72px Montserrat;
+	text-align: center;
+	color: #fff;
+}
+header>p {
+	margin: 80px auto;
+	width: 700px;
+	font: 20px/32px Montserrat;
+	text-align: center;
+	color: rgba(255,255,255,0.7);
+}
+header>form {
+	margin: 100px auto;
+	width: 970px;
+	height: 245px;
+	border: 1px solid rgba(255,255,255,0.7);
+	text-align: center;
+}
+header>form p:first-of-type {
+	margin-top: 60px;
+	font: 16px/28px Montserrat;
+	color: #fff;
+}
+header>form p:nth-of-type(2) {
+	font: 12px Montserrat;
+	color: rgba(255,255,255,0.7);
+}
+header>form p:nth-of-type(3) {
+	margin-top: 40px;
+	vertical-align: top;
+}
+header>form p:nth-of-type(3) input:nth-of-type(1),
+header>form p:nth-of-type(3) input:nth-of-type(2) {
+	border: 1px solid rgba(255,255,255,0.7);
+	width: 290px;
+	height: 50px;
+	background: transparent;
+	font: 14px/26px Montserrat;
+	text-indent: 20px;
+	color: #fff;
+}
+header>form p:nth-of-type(3) input:nth-of-type(2) {
+	color: rgba(255,255,255,0.7);
+}
+header>form p:nth-of-type(3) input:nth-of-type(3) {
+	position: relative;
+	top: -1px;
+	border: none;
+	width: 125px;
+	height: 52px;
+	font: 12px/22px Montserrat;
+}
+
+/*f1*/
+.f1 {
+	height: 710px;
+}
+.f1>p:first-of-type {
+	padding-top: 90px;
+	font: 12px/22px "宋体";
+	text-align: center;
+}
+.f1>p:nth-of-type(2) {
+	margin: 40px auto;
+	width: 660px;
+	font: 42px/52px "Montserrat";
+	text-align: center;
+}
+.f1>div {
+	width: 960px;
+	margin: auto;
+}
+.f1>div>p {
+	margin-top: 70px;
+	width: 440px;
+}
+.f1>div>p span {
+	display: block;
+	margin-left: 70px;
+}
+.f1>div>p span:nth-of-type(1) {	
+	font: 20px/32px "Montserrat";
+}
+.f1>div>p span:nth-of-type(2) {	
+	margin-top: 10px;
+	font: 16px/26px "Montserrat";
+}
+.f1>div>p:nth-of-type(1) {	
+	float: left;
+	background: url(images/01.png) no-repeat 13px 10px;
+}
+.f1>div>p:nth-of-type(2) {	
+	float: right;
+	background: url(images/02.png) no-repeat 10px 10px;
+}
+.f1>div>p:nth-of-type(3) {	
+	float: left;
+	background: url(images/03.png) no-repeat 5px 10px;
+}
+.f1>div>p:nth-of-type(4) {	
+	float: right;
+	background: url(images/04.png) no-repeat 5px 10px;
+}
+
+
+/*f2*/
+.f2 {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	overflow: hidden;
+	height: 800px;
+	background: url(images/f2-bg.png) no-repeat;
+}
+.f2-left {
+	margin-right: 660px;
+}
+.f2-left>p:first-of-type {
+	width: 390px;
+	font: 42px/52px "Montserrat";
+	color: #fff;
+}
+.f2-left>p:nth-of-type(2) {
+	margin-top: 30px;
+	margin-bottom: 80px;
+	width: 390px;
+	font: 18px/28px "Montserrat";
+	color: #fff;
+}
+.f2-left>p:nth-of-type(3) input:nth-of-type(1){
+	border: none;
+	width: 240px;
+	height: 60px;
+	font: 12px "Montserrat";
+	background: #fff;
+}
+.f2-left>p:nth-of-type(3) input:nth-of-type(2){
+	border: 1px solid rgba(255,255,255,0.7);
+	margin-left: 20px;
+	width: 235px;
+	height: 60px;
+	font: 12px "Montserrat";
+	color: #fff;
+	background: transparent;
+}
+.f2-right {
+	box-sizing: border-box;
+	position: absolute;
+right: -300px;
+	display: flex;
+	align-items: center;
+	border: 1px solid rgba(255,255,255,0.7);
+	border-radius: 30px;
+	height: 600px;
+}
+.circle {
+	border: 1px solid rgba(255,255,255,0.7);
+	border-radius: 3px;
+	margin-left: 30px;
+	margin-right: 20px;
+	width: 4px;
+	height: 4px;	
+}
+.f2-right-screen {
+	height: 540px;
+	background: #fff;
+}
+.f2-right-screen>p:first-of-type {
+	margin-top: 60px;
+	font: bold 18px/28px "Myriad Pro";
+	text-align: center;
+}
+.f2-right-screen>p:nth-of-type(2) {
+	font: 14px/28px "Myriad Pro";
+	text-align: center;
+}
+.f2-right-screen>div {
+	margin-left: 60px;	
+}
+.f2-right-screen>div div {
+	display: inline-block;
+	margin-top: 70px;
+	margin-right: 30px;
+	border-radius: 5px;
+	box-shadow: 0 0 2px #ccc;
+	width: 175px;
+	height: 240px;
+}
+.f2-right-screen>div div:nth-of-type(1) {
+	background: url(images/05.png) no-repeat top center;
+}
+.f2-right-screen>div div:nth-of-type(2) {
+	background: url(images/06.png) no-repeat top center;
+}
+.f2-right-screen>div div:nth-of-type(3) {
+	background: url(images/07.png) no-repeat top center;
+}
+.f2-right-screen>div div:nth-of-type(4) {
+	background: url(images/05.png) no-repeat top center;
+}
+.f2-right-screen>div p:first-of-type {
+	margin: 150px 10px 0;
+	font: bold 14px/34px "Myriad Pro";
+}
+.f2-right-screen>div p:nth-of-type(2) {
+	margin: 0 10px;
+	font: 10px "Myriad Pro";
+}
+
+
+/*f3*/
+.f3 {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	border-bottom: 2px solid #777;
+	padding: 50px 0;
+	height: 580px;
+}
+.f3 p {
+	font: 42px/52px "Montserrat";
+}
+.f3 div {
+	display: flex;
+	justify-content: space-between;
+	width: 960px;
+}
+.f3 dl {
+	width: 270px;
+	height: 280px;
+}
+.f3 dl dt {
+	font: 16px/26px "Myriad Pro";
+	text-align: center;
+}
+.f3 dl dd {
+	margin-top: 50px;
+	font: 16px/26px "Myriad Pro";
+	text-align: center;
+}
+
+.f4 {
+	position: relative;
+	height: 1000px;
+	border-bottom: 2px solid #777;
+}
+.f4>div {
+	width: 972px;
+	height: 780px;
+}
+.f4-top {
+	height: 350px;
+}
+.f4-top img {
+	float: left;
+	margin-right: 90px;
+}
+.f4 p {
+	padding-top: 70px;
+	font: 16px/28px "Montserrat";
+}
+.f4 p span {
+	display: block;
+	margin-bottom: 20px;
+	font: 20px/32px "Montserrat";
+}
+.f4-bottom {
+	position: absolute;
+	bottom: 0;
+}
+.f4-bottom img {
+	float: right;
+	margin-left: 80px;
+}
+
+/*f5*/
+.f5 {
+	position: relative;
+	height: 1084px;
+	border-bottom: 2px solid #777;
+}
+.f5>p {
+	margin: 90px auto 60px;
+	width: 700px;
+	text-align: center;
+	font: 18px/28px "Montserrat";
+}
+.f5>p span {
+	display: block;
+	margin-bottom: 20px;
+	width: 700px;
+	font: 42px/52px "Montserrat";
+}
+.f5-team {
+	position: relative;
+	margin: auto;
+	width: 970px;
+	height: 710px;
+}
+.f5-img_bg {
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 71;
+	width: 470px;
+	height: 340px;
+	text-align: center;
+	background: rgba(0,0,0,.7);
+}
+.f5-team-wrapper:hover .f5-img_bg {
+	visibility: visible;
+}
+
+
+.f5-img_bg p:nth-of-type(1) {
+	margin-top: 90px;
+	font: 20px/32px "Montserrat";
+	color: #fff;
+}
+.f5-img_bg p:nth-of-type(2) {
+	font: 20px/32px "Myriad Pro";	
+	color: rgba(255,255,255,.3);
+}
+.f5-img_bg p:nth-of-type(3) img {
+	margin: 50px 30px;
+}
+.f5-team-wrapper {
+	position: absolute;
+}
+
+.f5-team>div:nth-of-type(1) {
+	top: 0;
+	left: 0;
+}
+.f5-team>div:nth-of-type(2) {
+	top: 0;
+	right: 0;
+}
+.f5-team>div:nth-of-type(3) {
+	bottom: 0;
+	left: 0;
+}
+.f5-team>div:nth-of-type(4) {
+	bottom: 0;
+	right: 0;
+}
+
+
+/*f6*/
+.f6 {
+	position: relative;
+	border-bottom: 2px solid #777;
+	height: 700px;	
+}
+.f6>div {
+	height: 560px;
+	width: 970px;
+}
+.f6 form {
+	border: 1px solid #777;
+	border-radius: 5px;
+	height: 560px;
+	width: 470px;
+}
+.f6 form p {
+	font: 16px/110px "Montserrat";
+	text-align: center;
+}
+.f6 form input {
+	display: block;
+	margin: auto;
+	margin-bottom: 30px;
+	width: 370px;
+	height: 50px;
+	font: 14px/26px "Montserrat";
+	text-indent: 20px;
+	color: rgba(0,0,0,.3);
+}
+.f6 form textarea {
+	display: block;
+	margin: auto;
+	margin-bottom: 30px;
+	width: 370px;
+	height: 144px;
+	font: 14px/26px "Montserrat";
+	text-indent: 20px;
+	color: rgba(0,0,0,.3);
+}
+.f6 form input[type=submit] {
+	text-indent: 0;
+	background: #000;
+	color: #fff;
+}
+.f6-contact {
+	position: absolute;
+	right: 0;
+	top: 80px;
+	width: 370px;
+}
+.f6-contact p:nth-of-type(1) {
+	font: 42px/52px "Myriad Pro";
+}
+.f6-contact p:nth-of-type(2) {
+	margin-top: 20px;
+	font: 16px/26px "Myriad Pro";
+	color: rgba(0,0,0,.6);
+}
+.f6-contact p:nth-of-type(3),
+.f6-contact p:nth-of-type(4),
+.f6-contact p:nth-of-type(5) {
+	font: 16px/26px "Myriad Pro";
+	padding-left: 40px;
+}
+.f6-contact p:nth-of-type(3) {
+	margin-top: 70px;
+	background: url(images/16.png) no-repeat 0 10px;
+}
+.f6-contact p:nth-of-type(4) {
+	margin-top: 20px;
+	background: url(images/14.png) no-repeat 0;
+}
+.f6-contact p:nth-of-type(5) {
+	margin-top: 20px;
+	background: url(images/15.png) no-repeat 0;
+}
+
+/*footer*/
+footer {
+	height: 410px;
+	background: #000;
+	overflow: auto;
+}
+footer div {
+	margin: 80px auto 0;
+	width: 1120px;
+	font: 16px/46px "Montserrat";
+
+	color: rgba(255,255,255,.3);
+}
+footer p {
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+}
+footer p span {
+	display: block;
+	color: #fff;
+}
+footer p:last-child {
+	padding-bottom: 60px;
+	font: 16px/28px "Montserrat";
+	background: url(images/17.png) no-repeat left bottom;
+}
+footer p:last-child span{
+	font: 16px/46px "Montserrat";
+}

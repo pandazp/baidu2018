@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flexbox 0 — starting code</title>
+    <style>
+
+.wrapper {
+   overflow: auto;
+}
+
+.wrapper .left {
+    float: left;
+    margin-right: 20px;
+}
+
+.wrapper .right {
+    //margin-left: 0;
+   // overflow: auto;
+}
+@keyframes myfirst {
+  0% {background: red;}
+  25%  {background: yellow;}
+50%  {background: blue;}
+100% {background: green;}
+}
+p {
+  height: 200px;
+  width: 200px;
+  margin: 100px;
+  border: 1px solid #f00;
+  line-height: 200px; 
+/*  transform: rotate(30deg);
+  transform: translate(30px,100px);
+  transform: scale(2);*/
+
+  width: 500px;
+  animation: myfirst 4s;
+  //background: #0f0;
+}
+
+
+img {
+
+
+}
+
+    </style>
+  </head>
+  <body>
+<div class="wrapper" id="wrapper">
+  <div class="left">
+    左边固定宽度，高度不固定 </br> </br></br></br>高度有可能会很小，也可能很大。
+  </div>
+  <div class="right">
+    这里的内容可能比左侧高，也可能比左侧低。宽度需要自适应。</br>
+    基本的样式是，两个div相距20px, 左侧div宽 120px
+  </div>
+</div>
+<p><img src="images/02.png"></p>
+ssss
+  </body>
+</html>
