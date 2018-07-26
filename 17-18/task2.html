@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>IFE ECMAScript</title>
+	<style>
+		input {
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+	<input type="number" id="dec-number" placeholder="输入一个十进制非负整数">
+	<input id="bin-bit" type="number" placeholder="输入转化后二进制数字位数">
+	<button id="trans-btn">转化为二进制</button>
+	<p id="result">运算结果</p>
+	<script>
+		var res=document.getElementById("result");
+		var regexp=/^\d+$/;
+		function dec2bin(decNumber) {
+			
+			if(!regexp.test(decNumber)){
+				console.log("请输入一个十进制非负整数");
+				return ""; //返回空字符串为了使dec2bin(decNumber)不为undefined
+			}
+
+			// 简单方法
+			// res.innerHTML=parseInt(decNumber).toString(2);
+			
+			//用算法实现
+			var arr=[];
+			function a(b){
+				var c=b%2;  //求余
+				var d=Math.floor(b/2);				
+				if(d!==0){
+					arr.push(c);
+					arguments.callee(d);  //迭代
+				}else {      //最后除尽时不用迭代
+					arr.push(c);
+				}				
+			}
+			a(parseInt(decNumber));	
+			return arr.reverse().join("");		
+		}
+
+	   document.getElementById("trans-btn").onclick=function(){
+	   		var decNumber=document.getElementById("dec-number").value;
+	   		var binBit=document.getElementById("bin-bit").value;
+	   		
+	   		if (!regexp.test(binBit)){
+	   			console.log("请输入数字");   			
+	   		} else {
+	   			var decNumberL=dec2bin(decNumber).length;
+	   			var a=decNumberL-parseInt(binBit);
+	   			res.innerHTML=dec2bin(decNumber);
+	   			if(a>0){	   				
+	   				console.log("需要的数字位数小于实际位数");
+	   			}else {
+	   				for(var i=0;i<-a;i++){
+	   					res.innerHTML= 0+res.innerHTML;
+	   				}
+	   			}
+	   		}
+
+	   		
+	   }
+	</script>
+</body>
+</html>
+<!-- 12 1100 -->
